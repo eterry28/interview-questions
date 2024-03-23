@@ -1,0 +1,74 @@
+/* Layout.module.css */
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 60px 1fr;
+    grid-template-areas:
+      "header header"
+      "sidebar main";
+    height: 100vh;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: #01161e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header nav ul li {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .header nav ul li:hover {
+    color: #bdc3c7;
+  }
+  
+  .main {
+    grid-area: main;
+    padding: 20px;
+    background-color: #eff6e0;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #124559;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+  }
+  
+  .sidebar ul li:hover,
+  .sidebar ul li.selected {
+    background-color: #01161e;
+  }
+
+  .subItem{
+    margin-left: 15px;
+    font-size: small;
+  }
